@@ -3,15 +3,18 @@ import { DefaultFooter } from '@ant-design/pro-components';
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const defaultMessage='星铁小卖部出品';
+  const currentYear=new Date().getFullYear();
   return (
     <DefaultFooter
       style={{
         background: 'none',
       }}
+      copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
+          key: '智能 Star',
+          title: '智能 Star',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
@@ -22,8 +25,8 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
+          key: '智能 Star',
+          title: '智能 Star',
           href: 'https://ant.design',
           blankTarget: true,
         },
